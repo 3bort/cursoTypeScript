@@ -1,6 +1,6 @@
 //Desestructuración funciones
 
-interface Producto {
+export interface Producto {
     desc: string,
     precio: number,
 }
@@ -30,10 +30,12 @@ const isv = calculaISV(articulos);
 
 console.log('ISV:', isv)
 
+console.clear();
+
 //Desustructuración
 
 
-function calculaISVD( productos: Producto[]) :[number, number] {
+export function calculaISVD( productos: Producto[]) :[number, number] {
     let totald = 0;
     productos.forEach(({precio}) =>{
         totald += precio;
@@ -46,8 +48,8 @@ const articulosd = [ telefono, tablet];
 
 const [totald, isvd] = calculaISVD(articulosd);
 
-console.log('ISVD:', isvd)
-console.log('TotalD:', totald)
+//console.log('ISVD:', isvd)
+//console.log('TotalD:', totald)
 
 
 
