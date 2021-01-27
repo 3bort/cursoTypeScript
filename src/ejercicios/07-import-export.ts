@@ -1,6 +1,6 @@
 //Importación Exportación
 
-import { calculaISVD, Producto } from "./06-desustructuracion-funcion"; 
+import { calculaISVD, Producto } from "./06-desestructuracion-funcion"; 
 
 
 //Importación y Exportación
